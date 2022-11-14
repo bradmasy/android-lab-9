@@ -41,8 +41,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="right"
-                android:hint="Enter an Integer"
-                android:textSize="20sp" />
+                android:hint="Enter an Integer         "
+                android:textSize="15sp"
+                android:id="@+id/intOne"/>
 
         </LinearLayout>
 
@@ -70,14 +71,36 @@
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:hint="Enter another Integer"
-                android:textSize="20sp" />
+                android:textSize="15sp"
+                android:id="@+id/intTwo"/>
+
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Generate JSON"
+                android:id="@+id/toJSON"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="0sp"
-            android:layout_weight="50">
+            android:layout_weight="50"
+            android:layout_gravity="bottom">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:id="@+id/jsonText"
+                android:layout_gravity="bottom"/>
 
         </LinearLayout>
 
@@ -87,9 +110,7 @@
             android:layout_weight="30"
             android:orientation="vertical">
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -101,7 +122,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Calculate"/>
+                    android:text="Calculate"
+                    android:id="@+id/calculate"/>
 
             </LinearLayout>
 
